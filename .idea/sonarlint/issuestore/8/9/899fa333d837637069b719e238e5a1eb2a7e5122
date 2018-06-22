@@ -1,0 +1,6 @@
+
+|squid:S1488Z"`Immediately return this expression instead of assigning it to the temporary variable "response".(Ë‰¹•şÿÿÿÿ
+…squid:S1488g"bImmediately return this expression instead of assigning it to the temporary variable "resultList".(°öÄ²şÿÿÿÿ8˜Â•ß½,
+Rsquid:S1854?";Remove this useless assignment to local variable "updated".(“°ş
+Csquid:S1481?",Remove this unused "updated" local variable.(“°ş
+‘squid:S11926"sDefine a constant instead of duplicating this literal "Hubo un error al descargar la data de PipeSponsor." 3 times.(ÃƒÙ8˜Â•ß½,

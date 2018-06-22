@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="ejb" url="file://$PROJECT_DIR$/abm-business" />
+    <file type="ejb" url="file://$PROJECT_DIR$/abm-persistence" />
+    <file type="ejb" url="file://$PROJECT_DIR$/bp-framework/bp-framework-admin-business" />
+    <file type="ejb" url="file://$PROJECT_DIR$/../ml-bpfamework/bp-framework-commons" />
+    <file type="ejb" url="file://$PROJECT_DIR$/../ml-bpfamework/bp-framework-mlauth" />
+    <file type="ejb" url="file://$PROJECT_DIR$/../ml-bpfamework/bp-framework-persistence" />
+    <file type="javaeeApplication" url="file://$PROJECT_DIR$/abm-ear" />
+    <file type="javaeeApplication" url="file://$PROJECT_DIR$/../ml-bpfamework/bp-framework-admin-ear" />
+    <file type="web" url="file://$PROJECT_DIR$/abm-web" />
+    <file type="web" url="file://$PROJECT_DIR$/abm-webservices" />
+    <file type="web" url="file://$PROJECT_DIR$/../ml-bpfamework/bp-framework-admin-web" />
+    <file type="web" url="file://$PROJECT_DIR$/../ml-bpfamework/bp-framework-example-web-harmony" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/bp-framework/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/bp-framework/bp-framework-business/pom.xml" />
+        <option value="$PROJECT_DIR$/bp-framework/bp-framework-persistence/pom.xml" />
+        <option value="$PROJECT_DIR$/bp-framework/bp-framework-example-web/pom.xml" />
+        <option value="$PROJECT_DIR$/abm-web/pom.xml" />
+        <option value="$PROJECT_DIR$/abm-persistence/pom.xml" />
+        <option value="$PROJECT_DIR$/abm-business/pom.xml" />
+        <option value="$PROJECT_DIR$/abm-ear/pom.xml" />
+        <option value="$PROJECT_DIR$/abm-webservices/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/bp-framework/bp-framework-admin-business/pom.xml" />
+        <option value="$PROJECT_DIR$/bp-framework/bp-framework-web-commons/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" default="false" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="WebServicesPlugin" addRequiredLibraries="true" />
+</project>

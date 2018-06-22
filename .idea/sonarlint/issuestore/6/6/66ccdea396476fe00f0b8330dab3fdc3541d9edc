@@ -1,0 +1,11 @@
+
+Osquid:S1172Ò"0Remove this unused method parameter "brokerRut".(£Ãú¢8ø×Ï‚¾,
+Asquid:S2885'"#Make "format" an instance variable.(ñ‘õ8¯ŒÄİ½,
+Isquid:S1481ü"*Remove this unused "index" local variable.(ìüà·8‰äó‚¾,
+Isquid:S1481¶"*Remove this unused "index" local variable.(ìüà·8¬Ñá‚¾,
+”squid:UselessImportCheck"dRemove this unused import 'cl.metlife.abm.business.managers.sftp.exception.SFTPConnectionException'.(Óáûÿÿÿÿ8œñà½,
+Tsquid:S1172ˆ"0Remove this unused method parameter "brokerRut".(¼±·¢üÿÿÿÿ8ò•œ¾,
+Isquid:S1481™"*Remove this unused "index" local variable.(ìüà·8×Úë‚¾,
+]squid:UselessImportCheck"3Remove this unused import 'javax.ejb.Asynchronous'.(ˆŠs8¢Üïà½,
+Nsquid:S1172H"+Remove this unused method parameter "date".(³‰£°ûÿÿÿÿ8İ¶ğà½,
+Isquid:S1481ß"*Remove this unused "index" local variable.(ìüà·8ßìù‚¾,

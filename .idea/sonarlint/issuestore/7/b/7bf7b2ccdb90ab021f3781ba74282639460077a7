@@ -1,0 +1,5 @@
+
+>squid:S1481+"'Remove this unused "f2" local variable.(–¹ß
+Msquid:S1854+"6Remove this useless assignment to local variable "f2".(–¹ß
+bsquid:UselessImportCheck	"9Remove this unused import 'javax.ejb.ScheduleExpression'.(è¥¼ÿÿÿÿÿ
+zsquid:UselessImportCheck"VRemove this unused import 'cl.metlife.abm.business.execution.ProcessExecutionManager'.(Ò´ ¸

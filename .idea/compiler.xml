@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="abm-business" />
+        <module name="abm-domain" />
+        <module name="abm-ear" />
+        <module name="abm-persistence" />
+        <module name="abm-web" />
+        <module name="abm-webservices" />
+        <module name="amb-web" />
+        <module name="bp-framework-business" />
+        <module name="bp-framework-domain (1)" />
+        <module name="bp-framework-example-web" />
+        <module name="bpframework-bussiness" />
+        <module name="saam-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.6">
+      <module name="abm" target="1.6" />
+      <module name="abm-business" target="1.6" />
+      <module name="abm-domain" target="1.6" />
+      <module name="abm-ear" target="1.6" />
+      <module name="abm-persistence" target="1.6" />
+      <module name="abm-web" target="1.6" />
+      <module name="abm-webservices" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

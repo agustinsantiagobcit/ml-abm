@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: cl.blueprintsit.framework:bp-framework-admin-web:war:2.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/cl/blueprintsit/framework/bp-framework-admin-web/2.0/bp-framework-admin-web-2.0.war!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/cl/blueprintsit/framework/bp-framework-admin-web/2.0/bp-framework-admin-web-2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/cl/blueprintsit/framework/bp-framework-admin-web/2.0/bp-framework-admin-web-2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

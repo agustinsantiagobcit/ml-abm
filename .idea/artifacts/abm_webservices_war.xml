@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="abm-webservices:war">
+    <output-path>$PROJECT_DIR$/abm-webservices/target</output-path>
+    <root id="archive" name="abm-webservices-1.0.war">
+      <element id="artifact" artifact-name="abm-webservices:war exploded" />
+    </root>
+  </artifact>
+</component>

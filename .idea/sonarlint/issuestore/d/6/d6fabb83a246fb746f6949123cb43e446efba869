@@ -1,0 +1,10 @@
+
+;squid:S1643¿"Use a StringBuilder instead.(Ž¬ý8¦æ¾Ù½,
+bsquid:S1155Ò">Use isEmpty() to check whether the collection is empty or not.(ÞÝ Œüÿÿÿÿ8¦æ¾Ù½,
+€squid:UselessImportCheck"PRemove this unused import 'cl.metlife.abm.business.scheduler.LogProcessStarter'.(¶ü¶Ýÿÿÿÿÿ8¦æ¾Ù½,
+bsquid:S1155Â">Use isEmpty() to check whether the collection is empty or not.(–ËÚ®úÿÿÿÿ8¦æ¾Ù½,
+Gsquid:S1148ˆ"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8¦æ¾Ù½,
+bsquid:S1155Ê">Use isEmpty() to check whether the collection is empty or not.(Ö¢§ûÿÿÿÿÿ8¦æ¾Ù½,
+;squid:S1643Ï"Use a StringBuilder instead.(þš¦ˆ8¦æ¾Ù½,
+bsquid:S1155º">Use isEmpty() to check whether the collection is empty or not.(Ã³Š‰üÿÿÿÿ8¦æ¾Ù½,
+}squid:UselessImportCheck"MRemove this unused import 'cl.metlife.abm.business.scheduler.ProcessStarter'.(˜ÄáÉùÿÿÿÿ8¦æ¾Ù½,

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="abm-ear:ear">
+    <output-path>$PROJECT_DIR$/abm-ear/target</output-path>
+    <root id="archive" name="abm-ear-1.0.ear">
+      <element id="artifact" artifact-name="abm-ear:ear exploded" />
+    </root>
+  </artifact>
+</component>

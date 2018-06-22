@@ -1,0 +1,30 @@
+
+Wsquid:S1481}"4Remove this unused "internetAddress" local variable.(Â˜ßÊıÿÿÿÿ8ÕôÇ¢Â,
+9squid:S1643e"Use a StringBuilder instead.(÷¯œ~8®Ø‡¡Â,
+Gsquid:S1148¢"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÕôÇ¢Â,
+Xsquid:S11611":Add the "@Override" annotation above this method signature(‡èú×8Åî£Â,
+vsquid:S00117€"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™²òµşÿÿÿÿ8®Ø‡¡Â,
+:squid:S1643a"Use a StringBuilder instead.(•©§ˆ8®Ø‡¡Â,
+:squid:S1643`"Use a StringBuilder instead.(û‡“‚8ÕôÇ¢Â,
+?squid:S1643j"Use a StringBuilder instead.(¨ŸË¸ûÿÿÿÿ8®Ø‡¡Â,
+ésquid:S1192\"ÅDefine a constant instead of duplicating this literal "                    <td height=\"25\" width=\"12.5%\" align=\"center\" style=\"font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000; text-align:center; background-color:#daeff9; padding:5px 10px 5px 10px; border:solid 3px #ffffff;\"><strong>" 3 times.(šôèõÿÿÿÿÿ8®Ø‡¡Â,
+:squid:S1643^"Use a StringBuilder instead.(•©§ˆ8®Ø‡¡Â,
+dsquid:S2259 "@A "NullPointerException" could be thrown; "in" is nullable here.(€¶º‡ıÿÿÿÿ8ÕôÇ¢Â,
+?squid:S1643d"Use a StringBuilder instead.(¨ŸË¸ûÿÿÿÿ8®Ø‡¡Â,
+Xsquid:S1141~"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ÕôÇ¢Â,
+?squid:S1643f"Use a StringBuilder instead.(¡£Šıüÿÿÿÿ8®Ø‡¡Â,
+Gsquid:S1148…"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÕôÇ¢Â,
+:squid:S1643["Use a StringBuilder instead.(ˆ¿™»8ÕôÇ¢Â,
+:squid:S1643c"Use a StringBuilder instead.(ãØÅ8ÕôÇ¢Â,
+osquid:S1192^"QDefine a constant instead of duplicating this literal "</strong></td>\n" 5 times.(•©§ˆ8ÕôÇ¢Â,
+\
+squid:S106Š"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ8ÕôÇ¢Â,
+Isquid:S00108œ")Either remove or fill this block of code.(ï­£Ä8ÕôÇ¢Â,
+Fsquid:S1148<"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÕôÇ¢Â,
+:squid:S1643i"Use a StringBuilder instead.(â¶È©8ÕôÇ¢Â,
+W
+squid:S106†"9Replace this use of System.out or System.err by a logger.(äìÎÆ8ÕôÇ¢Â,
+?squid:S1643]"Use a StringBuilder instead.(üÑÉ›úÿÿÿÿ8ÕôÇ¢Â,
+:squid:S1643g"Use a StringBuilder instead.(•©§ˆ8®Ø‡¡Â,
+psquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àŞì¤8ÕôÇ¢Â,
+Xsquid:S11418"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ÕôÇ¢Â,

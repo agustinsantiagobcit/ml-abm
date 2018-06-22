@@ -1,0 +1,23 @@
+
+rsquid:S00116"ZRename this field "PREINGRESO_USER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±®‡¤
+squid:S00116"bRename this field "WSDL_CONFIG_KEY_SESSION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸³£Çùÿÿÿÿ
+wsquid:UselessImportCheck"SRemove this unused import 'cl.metlife.ws.clients.pipesponsor.SponsorModuleService'.(‰¶À®
+nsquid:S00117("QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş“„Œûÿÿÿÿ
+isquid:S00117="QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ»Ã
+wsquid:S00116"ZRename this field "PREINGRESO_PASS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»çÕ±şÿÿÿÿ
+nsquid:S00117<"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Øßá²ÿÿÿÿÿ
+Gsquid:S1481-"+Remove this unused "wsBulk" local variable.(¾ŞÉ‹ÿÿÿÿÿ
+|squid:UselessImportCheck"SRemove this unused import 'cl.metlife.ws.clients.pipesponsor.ISponsorMouleService'.(óÍšïşÿÿÿÿ
+vsquid:S00116"_Rename this field "WSDL_CONFIG_KEY_BULK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ĞÔm
+€squid:S00116"cRename this field "ENDPOINT_CONFIG_KEY_BULK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ²ÅÀúÿÿÿÿ
+=squid:S1170"!Make this final field static too.(¸³£Çùÿÿÿÿ
+7squid:S1170"!Make this final field static too.(™ĞÔm
+=squid:S1170"!Make this final field static too.(Œ²ÅÀúÿÿÿÿ
+]squid:S001126"FDefine and throw a dedicated exception instead of using a generic one.(‹¢¡6
+isquid:S00117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹²¢Ì
+8squid:S1170"!Make this final field static too.(±®‡¤
+Esquid:S1172:")Remove this unused method parameter "id".(ÈÈ¼¡øÿÿÿÿ
+=squid:S1170"!Make this final field static too.(»çÕ±şÿÿÿÿ
+ƒsquid:S00116"fRename this field "ENDPOINT_CONFIG_KEY_SESSION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›…ó³üÿÿÿÿ
+=squid:S1170"!Make this final field static too.(›…ó³üÿÿÿÿ
+]squid:S00112F"FDefine and throw a dedicated exception instead of using a generic one.(‹¢¡6

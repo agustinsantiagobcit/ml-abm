@@ -1,0 +1,21 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" 
+                xmlns:h="http://java.sun.com/jsf/html" 
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets" 
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:ph="http://primefaces.org/harmony">
+
+    <div class="layout-sidebar">
+        <div class="nano">
+            <div class="nano-content menu-scroll-content">
+                <h:form id="menuform">
+                    <ph:menu widgetVar="me">
+                        <p:menuitem id="rm_processes" value="Corredores" outcome="/processes"/>
+                        <p:menuitem id="rm_preingresoload" value="Envío Log Preingreso" outcome="/preIngresoSend"/>
+                        <p:menuitem id="rm_configs" value="Configuraciones del sistema" outcome="/configuraciones"/>
+                    </ph:menu>
+                </h:form>
+            </div>
+        </div>
+    </div>
+</ui:composition>

@@ -1,0 +1,7 @@
+
+Hsquid:S1481@",Remove this unused "updated" local variable.(ßï¦×þÿÿÿÿ
+Wsquid:S1854@";Remove this useless assignment to local variable "updated".(ßï¦×þÿÿÿÿ
+|squid:S1488["`Immediately return this expression instead of assigning it to the temporary variable "response".(Ë‰¹•þÿÿÿÿ
+‘squid:S11927"sDefine a constant instead of duplicating this literal "Hubo un error al descargar la data de PipeSponsor." 3 times.(ÃƒÙ8Çæ‘ß½,
+…squid:S1488h"bImmediately return this expression instead of assigning it to the temporary variable "resultList".(¢Åîþÿÿÿÿ8Çæ‘ß½,
+isquid:UselessImportCheck">Remove this unused import 'cl.metlife.abm.domain.AltaTitular'.(ÑÇè¯8¤ð’ß½,

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/abm.iml" filepath="$PROJECT_DIR$/abm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/abm-business/abm-business.iml" filepath="$PROJECT_DIR$/abm-business/abm-business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/abm-domain/abm-domain.iml" filepath="$PROJECT_DIR$/abm-domain/abm-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/abm-ear/abm-ear.iml" filepath="$PROJECT_DIR$/abm-ear/abm-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/abm-persistence/abm-persistence.iml" filepath="$PROJECT_DIR$/abm-persistence/abm-persistence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/abm-web/abm-web.iml" filepath="$PROJECT_DIR$/abm-web/abm-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/abm-webservices/abm-webservices.iml" filepath="$PROJECT_DIR$/abm-webservices/abm-webservices.iml" />
+    </modules>
+  </component>
+</project>

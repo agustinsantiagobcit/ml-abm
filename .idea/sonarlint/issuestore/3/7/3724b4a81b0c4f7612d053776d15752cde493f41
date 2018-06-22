@@ -1,0 +1,9 @@
+
+isquid:UselessImportCheck">Remove this unused import 'cl.metlife.abm.domain.AltaTitular'.(ÑÇè¯8Ã±Áƒ¾,
+Ysquid:S1751X"6Remove this "return" statement or make it conditional.(¶Ê±øÿÿÿÿ8ã¬Íƒ¾,
+Fsquid:S1148\"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8íÕ›ß½,
+gsquid:UselessImportCheck"<Remove this unused import 'cl.metlife.abm.domain.AltaCarga'.(±„»Å8Œ‹Áƒ¾,
+ssquid:UselessImportCheck	"CRemove this unused import 'cl.metlife.abm.domain.ExclusionTitular'.(·ò¨¬ùÿÿÿÿ8Œ‹Áƒ¾,
+Œsquid:UselessImportCheck"\Remove this unused import 'cl.metlife.abm.persistence.dao.exception.PipeSponsorDBException'.(„ş¹½ıÿÿÿÿ8œ°Ìƒ¾,
+ksquid:UselessImportCheck
+"ARemove this unused import 'cl.metlife.abm.domain.ExclusionCarga'.(§Æ«.8Œ‹Áƒ¾,

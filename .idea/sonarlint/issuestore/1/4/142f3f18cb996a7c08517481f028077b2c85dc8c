@@ -1,0 +1,6 @@
+
+]squid:S1192:"FDefine a constant instead of duplicating this literal "Error" 4 times.(ıÎİ«
+]squid:S1192:"FDefine a constant instead of duplicating this literal "growl" 5 times.(ıÎİ«
+€squid:S4165h"dRemove this useless assignment; "months" already holds the assigned value along all execution paths.(Ã¢ûÿÿÿÿ
+Ysquid:S1126±"AReplace this if-then-else statement by a single return statement.(àò¥¼
+~squid:S4165e"bRemove this useless assignment; "days" already holds the assigned value along all execution paths.(úíØ¾ıÿÿÿÿ

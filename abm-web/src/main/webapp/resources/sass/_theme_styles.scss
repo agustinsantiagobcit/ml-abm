@@ -1,0 +1,210 @@
+/* Add your customizations of theme here */
+/* Metlife Form Styles */
+.ml-form {
+  padding: 20px;
+  position: relative;
+}
+
+.ml-form-field {
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  border: 0px;
+  padding: 0;
+}
+
+/*  ****** Legend ****** */
+.ml-form-field legend {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #333333;
+}
+
+/*  **** Label ****** */
+.ml-form-field label {
+  position: relative;
+  display: block;
+  text-align: left;
+  font-size: 13px;
+  color: #333333;
+}
+.ml-form-field label span {
+  display: inline;
+  padding: 5px 2px 2px 2px;
+}
+
+/*  ****** Form Field  ****** */
+.ml-form-field input {
+  padding: 10px;
+  font: inherit;
+  outline: none;
+  border: 1px solid #BBBBBB;
+  font-size: 13px;
+  color: #333333;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.ml-form-field input:focus {
+  border: solid 1px #007abc;
+}
+
+.ml-form-field input:focus + span {
+  color: #666666;
+}
+
+.ml-form-field span {
+  background: #fff;
+  color: #333;
+}
+
+/* ******  Error   ****** */
+.ml-form-field-errortext {
+  display: none;
+  font-size: 12px;
+  color: #DB1818;
+  margin-top: 5px;
+}
+
+/* ****** Form field Error input ******* */
+.ml-form-field.error input, .ml-form-field.error select {
+  border: solid 1px #DB1818;
+  background-color: #FDE8E8;
+}
+.ml-form-field.error input:focus, .ml-form-field.error select:focus {
+  background-color: #fff;
+}
+.ml-form-field.error input:focus + span, .ml-form-field.error select:focus + span {
+  background-color: #fff;
+  color: #DB1818;
+}
+.ml-form-field.error span {
+  background-color: #FDE8E8;
+  color: #DB1818;
+}
+.ml-form-field.error .ml-form-field-errortext {
+  display: block;
+}
+
+/*  ******  Floating Label   ****** */
+.ml-form[data-forms="floating-label"] input + span, .ml-form[data-forms="floating-label"] input[value=""] + span {
+  transition: 0.3s ease;
+  -webkit-transform: translateY(-0.5em);
+  -ms-transform: translateY(-0.5em);
+  transform: translateY(-0.5em);
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 15px;
+  font-size: 13px;
+  width: 90%;
+}
+.ml-form[data-forms="floating-label"] input:focus + span, .ml-form[data-forms="floating-label"] input:not([value=""]) + span {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  font-weight: bold;
+  font-size: 13px;
+  visibility: visible;
+  top: -5px;
+  margin-top: 13px;
+  width: auto;
+  background-color: #fff;
+  text-shadow: -4px 2px 0 0 #FFFFFF, 3px 0 1px 0 #FFFFFF, -2px 0 0 0 #FFFFFF, -3px 1px 2px 0 #FFFFFF, 6px 0 0 0 #FFFFFF, 4px 2px 0 0 #FFFFFF, 1px 1px 0 0 #FFFFFF;
+}
+
+/* Haxoriando cosillas */
+
+h1 {
+  font-family:'Georgia';
+  font-size:32px;
+  text-align:center;
+  font-weight: bolder;
+  margin-bottom: 25px;
+}
+
+body .ui-button.ui-button-icon-only {
+  margin-right: 5px;
+}
+
+.ui-button:hover {
+  text-decoration:underline !important;
+}
+
+.Wid90 {
+  width:90% !important;
+}
+
+.Wid70 {
+  width:70% !important;
+}
+
+.red-icon {
+  color:red;
+}
+
+.ui-messages-info-icon{
+  color:#a4ce4e !important;
+}
+
+.ui-messages-error-icon {
+  color: #bb3636 !important;
+}
+
+.ui-growl-image-info {
+  color:#a4ce4e !important;
+}
+
+.ui-growl-image-error {
+  color: #bb3636 !important;
+}
+
+.ui-icon-arrowthick-1-w {
+  margin-top: -12px !important;
+}
+
+.ui-icon-arrowthick-1-w:before {
+  content: "<";
+}
+
+.ui-icon-arrowthick-1-e {
+  margin-top: -12px !important;
+}
+
+.ui-icon-arrowthick-1-e:before {
+  content: ">";
+}
+
+.center {
+  margin:0 auto !important;
+}
+
+.calendarFilterLogView input {
+  margin-left: 4px !important;
+  margin-bottom: 4px !important;
+}
+
+#logout-button:hover {
+  background-image: url("/harmony/javax.faces.resource/images/util-logout-hover.svg.xhtml?ln=primefaces-harmony-metlife");
+}
+
+.preingreso_dialog_buttonLeft {
+  width: 49.5% !important;float: left !important;margin-left: -1px !important;height: 45px !important;text-align: center !important;background-color: #007abc !important;font-weight: bold !important;line-height: 45px !important;font-size: 18px !important;color: #fff !important;
+}
+
+.preingreso_dialog_buttonLeft:hover {
+  text-decoration: underline !important;
+  color:#fff !important;
+}
+
+.preingreso_dialog_buttonRight {
+  width: 50.55% !important;background-color: #34a835 !important;border: 1px solid #34a835 !important;border-radius: 0px 0px !important;height: 45px !important;font-size: 19px !important;
+}
+

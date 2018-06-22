@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="ABMPersistenceUnit">
+        <provider>net.bull.javamelody.JpaPersistence</provider>
+        <jta-data-source>jdbc/logPreIngreso</jta-data-source>
+
+        <class>cl.metlife.abm.domain.Broker</class>
+        <class>cl.metlife.abm.domain.ABMConfiguration</class>
+        <class>cl.metlife.abm.domain.Detail</class>
+        <class>cl.metlife.abm.domain.DetailsStatus</class>
+        <class>cl.metlife.abm.domain.Log</class>
+        <class>cl.metlife.abm.domain.Lot</class>
+        <class>cl.metlife.abm.domain.LotStatus</class>
+        <class>cl.metlife.abm.domain.FileType</class>
+        <class>cl.metlife.abm.domain.Process</class>
+        <class>cl.metlife.abm.domain.ProcessType</class>
+        <class>cl.metlife.abm.domain.Timer</class>
+        <class>cl.metlife.abm.domain.AltaTitular</class>
+        <class>cl.metlife.abm.domain.AltaCarga</class>
+        <class>cl.metlife.abm.domain.ExclusionTitular</class>
+        <class>cl.metlife.abm.domain.ExclusionCarga</class>
+
+        <properties>
+            <property name="openjpa.Log" value="DefaultLevel=TRACE, Runtime=INFO, Tool=INFO, SQL=TRACE"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>

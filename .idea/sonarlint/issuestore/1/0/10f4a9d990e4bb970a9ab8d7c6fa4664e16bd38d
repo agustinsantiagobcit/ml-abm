@@ -1,0 +1,8 @@
+
+”squid:UselessImportCheck"dRemove this unused import 'cl.metlife.abm.business.managers.sftp.exception.SFTPConnectionException'.(Óáûÿÿÿÿ8ŸÁß½,
+jsquid:UselessImportCheck":Remove this unused import 'cl.metlife.abm.domain.Process'.(ã­«ÿÿÿÿÿ8ŸÁß½,
+[squid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ŸÁß½,
+~squid:UselessImportCheck"NRemove this unused import 'cl.metlife.abm.business.managers.sftp.SFTPManager'.(®—ó»øÿÿÿÿ8ŸÁß½,
+`squid:UselessImportCheck"5Remove this unused import 'java.text.ParseException'.(ñ®ï•8ŸÁß½,
+Msquid:S1068"*Remove this unused "LOGGER" private field.(Ç•­Îÿÿÿÿÿ8ŸÁß½,
+bsquid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8ŸÁß½,

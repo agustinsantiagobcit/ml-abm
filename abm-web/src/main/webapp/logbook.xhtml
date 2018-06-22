@@ -1,0 +1,280 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                    xmlns:h="http://java.sun.com/jsf/html"
+                    xmlns:f="http://java.sun.com/jsf/core"
+                    xmlns:ui="http://java.sun.com/jsf/facelets"
+                    xmlns:p="http://primefaces.org/ui"
+                    xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+                    template="WEB-INF/template.xhtml">
+
+    <f:metadata>
+        <f:viewParam name="processId" value="#{logbookBean.processId}" />
+        <f:event type="preRenderView" listener="#{logbookBean.init}" />
+    </f:metadata>
+
+    <ui:define name="title">Bitácora de un proceso</ui:define>
+    <ui:define name="viewname">
+        <li><p:link outcome="/processes">Procesos</p:link></li>
+        <li>/ Logs de ejecución Proceso #{logbookBean.processId}</li>
+    </ui:define>
+
+    <ui:define name="content">
+        <div class="ui-g">
+            <div class="ui-g-12">
+                <h1>Historial de ejecución</h1>
+
+                <div class="card">
+
+                    <style>
+                        body .ui-paginator .ui-paginator-rpp-label {
+                            display: none !important;
+                            float: none !important;
+                        }
+                    </style>
+
+                    <p:dialog id="dialogStacktrace" header="Stacktrace" visible="false" widgetVar="dialogStacktraceVar" width="800" height="400" closable="true">
+                        <h:outputText id="traceLabel" value="#{logbookBean.stackTrace}" />
+                    </p:dialog>
+
+                    <h:form id="logForm" prependId="false">
+                        <p:messages id="growl" showDetail="true" life="4000" closable="true"/>
+                        <p:poll id="autoupdater" widgetVar="autoupdaterVar" interval="10" listener="#{logbookBean.init}" update="logTable"/>
+
+                        <p:fragment id="fragDialog">
+                            <p:dialog id="lotDetailDialog" header="Detalle" visible="false" widgetVar="lotDetailDialogVar" width="1200" height="130" closable="true" modal="true" resizable="true">
+                                <p:dataTable var="detail" value="#{logbookBean.currentDetails}" rendered="#{logbookBean.currentDetails != null}" reflow="true">
+                                    <p:column headerText="Column1" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2 or 3 or 4}">
+                                        <h:outputText value="#{detail.column1}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column2" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2 or 3 or 4}">
+                                        <h:outputText value="#{detail.column2}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column3" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2 or 3 or 4}">
+                                        <h:outputText value="#{detail.column3}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column4" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2 or 3 or 4}">
+                                        <h:outputText value="#{detail.column4}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column5" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2 or 3 or 4}">
+                                        <h:outputText value="#{detail.column5}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column6" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2 or 3 or 4}">
+                                        <h:outputText value="#{detail.column6}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column7" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2 or 3 or 4}">
+                                        <h:outputText value="#{detail.column7}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column8" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2 or 3 or 4}">
+                                        <h:outputText value="#{detail.column8}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column9" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2 or 3 or 4}">
+                                        <h:outputText value="#{detail.column9}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column10" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2 or 4}">
+                                        <h:outputText value="#{detail.column10}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column11" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2 or 4}">
+                                        <h:outputText value="#{detail.column11}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column12" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2 or 4}">
+                                        <h:outputText value="#{detail.column12}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column13" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2 or 4}">
+                                        <h:outputText value="#{detail.column13}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column14" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2 or 4}">
+                                        <h:outputText value="#{detail.column14}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column15" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2}">
+                                        <h:outputText value="#{detail.column15}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column16" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2}">
+                                        <h:outputText value="#{detail.column16}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column17" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2}">
+                                        <h:outputText value="#{detail.column17}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column18" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2}">
+                                        <h:outputText value="#{detail.column18}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column19" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2}">
+                                        <h:outputText value="#{detail.column19}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column20" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2}">
+                                        <h:outputText value="#{detail.column20}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column21" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2}">
+                                        <h:outputText value="#{detail.column21}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column22" width="120" rendered="#{logbookBean.currentLot.fileTypeId eq 1}">
+                                        <h:outputText value="#{detail.column22}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column23" width="120" rendered="#{logbookBean.currentLot.fileTypeId == 1}">
+                                        <h:outputText value="#{detail.column23}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column24" width="120" rendered="#{logbookBean.currentLot.fileTypeId == 1}">
+                                        <h:outputText value="#{detail.column24}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column25" width="120" rendered="#{logbookBean.currentLot.fileTypeId == 1}">
+                                        <h:outputText value="#{detail.column25}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column26" width="120" rendered="#{logbookBean.currentLot.fileTypeId == 1}">
+                                        <h:outputText value="#{detail.column26}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column27" width="120" rendered="#{logbookBean.currentLot.fileTypeId == 1}">
+                                        <h:outputText value="#{detail.column26}" />
+                                    </p:column>
+
+                                    <p:column headerText="Column28" width="120" rendered="#{logbookBean.currentLot.fileTypeId == 1}">
+                                        <h:outputText value="#{detail.column26}" />
+                                    </p:column>
+
+                                    <p:column headerText="Filenet Code" width="370" rendered="#{logbookBean.currentLot.fileTypeId eq 1 or 2 or 3 or 4}">
+                                        <h:outputText value="#{detail.idFilenet}" />
+                                    </p:column>
+                                </p:dataTable>
+                            </p:dialog>
+                        </p:fragment>
+
+                        <p:dataTable id="logTable"
+                                     styleClass="table"
+                                     widgetVar="logTableVar"
+                                     var="log"
+                                     value="#{logbookBean.logs}"
+                                     emptyMessage="No hay logs asociados al corredor."
+                                     rows="30"
+                                     paginator="true"
+                                     sortOrder="descending"
+                                     paginatorPosition="bottom"
+                                     paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown} {Exporters}"
+                                     rowsPerPageTemplate="30,60,100"
+                                     rowIndexVar="rowIndexVar"
+                                     lazy="true"
+                                     rendered="#{not empty logbookBean.logs}">
+
+                            <f:facet name="header">
+                                #{logbookBean.process.brokerName} (#{logbookBean.process.brokerRut}) - Proceso #{(logbookBean.process.active == true) ? 'Activo': 'Inactivo'}
+                            </f:facet>
+
+                            <f:facet name="{Exporters}">
+                                <h:commandLink>
+                                    <p:graphicImage name="images/xls.png" library="primefaces-harmony-metlife" styleClass="topbar-profile" width="24" height="27" style="margin-bottom: -8px;"/>
+                                    <p:dataExporter type="xlsx" target="logTable" fileName="registroLog_#{logbookBean.currentDate}" />
+                                </h:commandLink>
+
+                                <h:commandLink>
+                                    <p:graphicImage name="images/csv.png" library="primefaces-harmony-metlife" styleClass="topbar-profile" width="24" height="27" style="margin-bottom: -8px;"/>
+                                    <p:dataExporter type="csv" target="logTable" fileName="registroLog_#{logbookBean.currentDate}" />
+                                </h:commandLink>
+
+                                <p:commandButton value="Actualizar" action="#{logbookBean.refreshTable}" icon="fa fa-undo" update="logForm" style="margin-left:15px" />
+                            </f:facet>
+
+                            <p:column headerText="Fecha" filterBy="#{log.date}" width="200">
+                                <f:facet name="filter">
+                                    <h:inputHidden id="filter2" />
+                                </f:facet>
+                                <f:facet name="header">
+                                    <span class="ui-column-title">Fecha</span>
+                                    <br />
+                                    <p:calendar id="from2" pattern="dd/MM/yyyy HH:mm:ss" placeholder="Desde" styleClass="calendarFilterLogView" locale="es">
+                                        <p:ajax event="dateSelect" onstart="$(PrimeFaces.escapeClientId('#{p:component('filter2')}'))[0].value = $(PrimeFaces.escapeClientId('#{p:component('from2')}_input'))[0].value + '-' + $(PrimeFaces.escapeClientId('#{p:component('to2')}_input'))[0].value" oncomplete="PF('logTableVar').filter()" />
+                                    </p:calendar>
+                                    <br />
+                                    <p:calendar id="to2" pattern="dd/MM/yyyy HH:mm:ss" placeholder="Hasta" styleClass="calendarFilterLogView2" locale="es">
+                                        <p:ajax event="dateSelect" onstart="$(PrimeFaces.escapeClientId('#{p:component('filter2')}'))[0].value = $(PrimeFaces.escapeClientId('#{p:component('from2')}_input'))[0].value + '-' + $(PrimeFaces.escapeClientId('#{p:component('to2')}_input'))[0].value" oncomplete="PF('logTableVar').filter()" />
+                                    </p:calendar>
+                                </f:facet>
+                                <h:outputText value="#{log.date}" id="col1" styleClass="dateTimeField cell">
+                                    <f:convertDateTime pattern="dd/MM/yyyy HH:mm:ss"/>
+                                </h:outputText>
+                            </p:column>
+
+                            <p:column headerText="Rut Corredor" width="157" filterBy="#{log.lot.process.brokerRut}" filterMatchMode="contains">
+                                <h:outputText value="#{((log.process.processTypeId == 2) ? '(M) '.concat(log.process.brokerRut) : log.process.brokerRut)}" id="col2" />
+                                <h:outputText value="#{log.brokerRut}" id="col_hidden" rendered="#{log.brokerRut != null}" style="clear:both;"/>
+                            </p:column>
+
+                            <p:column headerText="Lote" width="152" filterBy="#{log.lot.id}"  filterMatchMode="contains">
+                                <p:commandLink rendered="#{log.lot != null}" action="#{logbookBean.setLot(log.lot)}" oncomplete="PF('lotDetailDialogVar').show();" update="fragDialog" id="col3" styleClass="cell">
+                                    <h:outputText value="#{log.lot.number}" id="txt" />
+                                </p:commandLink>
+                                <p:fragment rendered="#{log.detailId != null}">
+                                    (<p:commandLink action="#{logbookBean.setLot(log.lot, log.detailId)}" oncomplete="PF('lotDetailDialogVar').show();" update="fragDialog" styleClass="cell">
+                                        <h:outputText value="Reg. #{logbookBean.getIndexRowByDetail(log.detailId)}" />
+                                    </p:commandLink>)
+                                </p:fragment>
+
+                            </p:column>
+
+                            <p:column headerText="Tipo"  width="130" filterBy="#{log.level}" filterMatchMode="contains">
+                                <f:facet name="filter">
+                                    <p:selectOneMenu onchange="PF('logTableVar').filter()" style="width: 100px">
+                                        <f:selectItem itemLabel="Todos" itemValue="#{null}" noSelectionOption="true"/>
+                                        <f:selectItem itemValue="INFO" itemLabel="INFO"/>
+                                        <f:selectItem itemValue="ERROR" itemLabel="ERROR"/>
+                                    </p:selectOneMenu>
+                                </f:facet>
+                                <h:outputText value="#{log.level}" id="col4" styleClass="cell"/>
+                            </p:column>
+
+                            <p:column headerText="Proceso" width="126" filterBy="#{log.step}" filterMatchMode="contains">
+                                <f:facet name="filter">
+                                    <p:selectOneMenu onchange="PF('logTableVar').filter()" style="width: 100px">
+                                        <f:selectItem itemLabel="Todos" itemValue="#{null}" noSelectionOption="true"/>
+                                        <f:selectItem itemValue="EJECUCION GENERAL" itemLabel="EJECUCION GENERAL"/>
+                                        <f:selectItem itemValue="PIPE SPONSOR" itemLabel="PIPE SPONSOR"/>
+                                        <f:selectItem itemValue="SFTP" itemLabel="SFTP"/>
+                                        <f:selectItem itemValue="FILENET" itemLabel="FILENET"/>
+                                    </p:selectOneMenu>
+                                </f:facet>
+                                <h:outputText value="#{log.step}" id="col5" styleClass="cell"/>
+                            </p:column>
+
+                            <p:column headerText="Mensaje" >
+                                <h:outputText value="#{log.comment}" id="col6" styleClass="cell"/>
+                            </p:column>
+
+                            <p:column headerText="Stack Trace" width="100">
+                                <p:commandButton id="col7" styleClass="cell" icon="fa fa-search" action="#{logbookBean.setLogTrace(log)}" update="dialogStacktrace" oncomplete="PF('dialogStacktraceVar').show();" rendered="#{not empty log.trace}"/>
+                            </p:column>
+
+                        </p:dataTable>
+
+                        <p:panelGrid columns="1"  layout="grid" styleClass="ui-panelgrid-blank">
+                            <p:button value="Volver atrás" icon="fa fa-caret-left" action="users" styleClass="ui-priority-primary" outcome="processes" />
+                        </p:panelGrid>
+
+                    </h:form>
+
+                </div>
+            </div>
+        </div>
+    </ui:define>
+
+</ui:composition>

@@ -1,0 +1,41 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:p="http://primefaces.org/ui">
+
+    <div class="layout-topbar">
+        <h:link outcome="/home" styleClass="logo-container">
+            <p:graphicImage name="images/metlife-logo.png" library="metlife"/>
+        </h:link>
+        <div id="logo_text_right">
+            <h1 class="application-name">Altas y Bajas Multicorredor</h1>
+        </div>
+
+        <div class="topbar-content">
+            <a href="#" id="topbar-sidebar-button">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <div id="topbar-profile-welcometext" class="welcome-text">
+                Bienvenido <span id="topbar-profile-welcometext-name"><h:outputText value="#{authenticationBean.loggedUser.name}" /></span>
+            </div>
+
+            <div id="topbar-profile-menu-button" >
+                <p:commandLink action="#{authenticationBean.logout}">
+                    <p:graphicImage id="logout-button" name="images/util-logout.svg" library="primefaces-harmony-metlife" styleClass="topbar-profile" width="30"/>
+                </p:commandLink>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        window.onscroll = function() {
+                if (window.XMLHttpRequest) {
+                    if (document.documentElement.scrollTop > 25 || self.pageYOffset > 25) {
+                        $('.welcome-text').fadeOut(500);
+                    } else if (document.documentElement.scrollTop &lt; 25 || self.pageYOffset &lt; 25) {
+                        $('.welcome-text').fadeIn(500);
+                    }
+                }
+            }
+    </script>
+
+</ui:composition>

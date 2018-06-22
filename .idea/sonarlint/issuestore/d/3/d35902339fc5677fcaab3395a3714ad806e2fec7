@@ -1,0 +1,37 @@
+
+Bsquid:S1075|"&Remove this hard-coded path-delimiter.(ÔÑ¦ûÿÿÿÿ
+=squid:S1075D"&Remove this hard-coded path-delimiter.(²š¦¸
+=squid:S1168f"&Return an empty array instead of null.(¥¹ï
+=squid:S1075p"&Remove this hard-coded path-delimiter.(¿Ëå¼
+Bsquid:S1075|"&Remove this hard-coded path-delimiter.(ÔÑ¦ûÿÿÿÿ
+Bsquid:S1075|"&Remove this hard-coded path-delimiter.(ÔÑ¦ûÿÿÿÿ
+X
+squid:S899_"=Do something with the "boolean" value returned by "renameTo".(œŞ¯‰øÿÿÿÿ
+zsquid:UselessImportCheck"VRemove this unused import 'cl.metlife.abm.business.execution.ProcessExecutionManager'.(Ò´ ¸
+=squid:S1075q"&Remove this hard-coded path-delimiter.(ºËÌÿ
+=squid:S1075*"&Remove this hard-coded path-delimiter.(²š¦¸
+Bsquid:S1075Y"&Remove this hard-coded path-delimiter.(‰©Î“úÿÿÿÿ
+Bsquid:S1075Y"&Remove this hard-coded path-delimiter.(‰©Î“úÿÿÿÿ
+Bsquid:S1075_"&Remove this hard-coded path-delimiter.(œŞ¯‰øÿÿÿÿ
+=squid:S1075p"&Remove this hard-coded path-delimiter.(¿Ëå¼
+Tsquid:UselessImportCheck"0Remove this unused import 'java.io.InputStream'.(¹»º
+S
+squid:S899q"=Do something with the "boolean" value returned by "renameTo".(ºËÌÿ
+Bsquid:S1075_"&Remove this hard-coded path-delimiter.(œŞ¯‰øÿÿÿÿ
+=squid:S1075q"&Remove this hard-coded path-delimiter.(ºËÌÿ
+Bsquid:S1075'"&Remove this hard-coded path-delimiter.(Æ¬‚üÿÿÿÿ
+=squid:S1075#"&Remove this hard-coded path-delimiter.(´Ù¹
+=squid:S1075q"&Remove this hard-coded path-delimiter.(ºËÌÿ
+=squid:S1075*"&Remove this hard-coded path-delimiter.(²š¦¸
+Bsquid:S1075_"&Remove this hard-coded path-delimiter.(œŞ¯‰øÿÿÿÿ
+=squid:S1075*"&Remove this hard-coded path-delimiter.(²š¦¸
+Bsquid:S1075-"&Remove this hard-coded path-delimiter.(Ù‘ìÅøÿÿÿÿ
+=squid:S1075D"&Remove this hard-coded path-delimiter.(²š¦¸
+=squid:S1075p"&Remove this hard-coded path-delimiter.(¿Ëå¼
+Bsquid:S1481j"+Remove this unused "stream" local variable.(øºã
+Bsquid:S1075-"&Remove this hard-coded path-delimiter.(Ù‘ìÅøÿÿÿÿ
+Bsquid:S1075Y"&Remove this hard-coded path-delimiter.(‰©Î“úÿÿÿÿ
+Bsquid:S1075-"&Remove this hard-coded path-delimiter.(Ù‘ìÅøÿÿÿÿ
+Bsquid:S1168O"+Return an empty collection instead of null.(¥¹ï
+Bsquid:S1075'"&Remove this hard-coded path-delimiter.(Æ¬‚üÿÿÿÿ
+=squid:S1075D"&Remove this hard-coded path-delimiter.(²š¦¸

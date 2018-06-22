@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="abm-persistence:ejb">
+    <output-path>$PROJECT_DIR$/abm-persistence/target</output-path>
+    <root id="archive" name="abm-persistence-1.0.jar">
+      <element id="artifact" artifact-name="abm-persistence:ejb exploded" />
+    </root>
+  </artifact>
+</component>

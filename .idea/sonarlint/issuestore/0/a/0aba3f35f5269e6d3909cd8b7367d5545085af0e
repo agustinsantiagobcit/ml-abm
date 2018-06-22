@@ -1,0 +1,8 @@
+
+Esquid:S1481¡"-Remove this unused "response" local variable.(Ÿéû“
+Hsquid:S1481£"+Remove this unused "clause" local variable.(—†ıÿÿÿÿ
+Bsquid:UselessImportCheck"Remove this duplicated import.(¹—üõ
+~squid:S1488o"`Immediately return this expression instead of assigning it to the temporary variable "response".(¥ë§¥8²ñ™Â,
+hsquid:S1192]"JDefine a constant instead of duplicating this literal "processId" 4 times.(ÁåÔ‹8²ñ™Â,
+ssquid:S1488°"[Immediately return this expression instead of assigning it to the temporary variable "res".(™“
+Tsquid:S1854¡"<Remove this useless assignment to local variable "response".(Ÿéû“

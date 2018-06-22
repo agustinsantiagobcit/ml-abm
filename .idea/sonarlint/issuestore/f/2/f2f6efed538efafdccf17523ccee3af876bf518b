@@ -1,0 +1,5 @@
+
+usquid:S3776O"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(ׂױ כתÿÿÿÿ8קיעב½,
+W"squid:SwitchLastCaseIsDefaultCheck¾""Add a default case to this switch.(לתַV8קיעב½,
+squid:S1186A"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿‹M8קיעב½,
+Rsquid:S1066V"/Merge this if statement with the enclosing one.(־Þ‘ûÿÿÿÿ8קיעב½,

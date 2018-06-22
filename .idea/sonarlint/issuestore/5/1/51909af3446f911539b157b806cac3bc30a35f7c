@@ -1,0 +1,12 @@
+
+psquid:UselessImportCheck"@Remove this unused import 'org.apache.commons.io.FilenameUtils'.(éì¢óûÿÿÿÿ8¦†Õÿ½,
+\squid:UselessImportCheck"1Remove this unused import 'java.text.DateFormat'.(÷Œá¼8¦†Õÿ½,
+tsquid:UselessImportCheck"DRemove this unused import 'javax.xml.datatype.XMLGregorianCalendar'.(€ÛËéÿÿÿÿÿ8¦†Õÿ½,
+ysquid:UselessImportCheck"NRemove this unused import 'javax.xml.datatype.DatatypeConfigurationException'.(óµØî8¦†Õÿ½,
+{squid:UselessImportCheck"PRemove this unused import 'cl.metlife.ws.clients.preingreso.bulk.ObjectFactory'.(²’£ë8¦†Õÿ½,
+[squid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8º¼†¤¿,
+fsquid:UnusedPrivateMethodq"5Remove this unused private "updateLotToError" method.(£‘àÀÿÿÿÿÿ8¦†Õÿ½,
+jsquid:UselessImportCheck"?Remove this unused import 'javax.xml.datatype.DatatypeFactory'.(ı®Ã8¦†Õÿ½,
+[squid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¦†Õÿ½,
+`squid:UselessImportCheck"5Remove this unused import 'java.text.ParseException'.(ñ®ï•8¦†Õÿ½,
+bsquid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8¦†Õÿ½,

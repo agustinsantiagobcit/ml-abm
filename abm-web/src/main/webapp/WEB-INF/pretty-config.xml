@@ -1,0 +1,42 @@
+<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
+                      http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
+
+    <url-mapping id="login">
+        <pattern value="/login" />
+        <view-id value="/login.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="processes">
+        <pattern value="/brokers" />
+        <view-id value="/processes.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="preingreso-send">
+        <pattern value="/preIngresoSend" />
+        <view-id value="/preIngresoSend.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="configurations">
+        <pattern value="/configurations" />
+        <view-id value="/configuraciones.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="edit-process">
+        <pattern value="/broker/edit/#{processId}" />
+        <view-id value="/editProcess.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="execution-log">
+        <pattern value="/broker/executionLog/#{processId}" />
+        <view-id value="/logbook.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="no-results">
+        <pattern value="/broker/noResults/#{processId}" />
+        <view-id value="/noResults.xhtml" />
+    </url-mapping>
+
+
+</pretty-config>

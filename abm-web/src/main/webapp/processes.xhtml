@@ -1,0 +1,126 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+                template="WEB-INF/template.xhtml">
+
+
+    <ui:define name="title">Configuración de Procesos</ui:define>
+    <ui:define name="viewname">
+        <li><p:link outcome="/processes">Corredores</p:link></li>
+    </ui:define>
+
+
+    <ui:define name="content">
+        <div class="ui-g">
+            <div class="ui-g-12">
+                <h1>Corredores</h1>
+
+                <div class="card">
+
+                    <h:form id="form">
+
+                        <p:messages id="messages" showDetail="true"/>
+
+                        <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+                            <p:commandButton value="No" type="button" styleClass="ui-confirmdialog-no" icon="fa fa-close White" style="float:left"/>
+                            <p:commandButton value="Si" type="button" styleClass="ui-confirmdialog-yes green-btn" icon="fa fa-check White" style="float:right"/>
+                        </p:confirmDialog>
+
+                        <p:dataTable id="processesDT" var="process" value="#{processBean.processList}" styleClass="users"
+                                     rows="30" paginator="true" paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown} {Exporters}"
+                                     emptyMessage="No hay corredores creados en la base de datos." reflow="true"  paginatorPosition="bottom" rowIndexVar="rowIndexVar">
+                            <f:facet name="header">
+                                Configuración de Procesos ABM
+                            </f:facet>
+
+                            <f:facet name="{Exporters}">
+                                <p:button id="new" icon="fa fa-plus" styleClass="table-button" outcome="editProcess" value="Nuevo corredor"/>
+                            </f:facet>
+
+                            <p:column headerText="#" sortBy="#{process.id}" width="40">
+                                <p:outputLabel value="#{process.id}"/>
+                            </p:column>
+
+                            <p:column headerText="Nombre del proceso" sortBy="#{process.name}" filterable="true" filterBy="#{process.name}">
+                                <h:outputText value="#{process.name}" />
+                            </p:column>
+
+                            <p:column headerText="Corredor" sortBy="#{process.brokerName} (#{process.brokerRut})"  filterable="true" filterBy="#{process.brokerName} (#{process.brokerRut})">
+                                <h:outputText value="#{process.brokerName} (#{process.brokerRut})" />
+                            </p:column>
+
+                            <p:column headerText="Conexion SFTP">
+                                <h:outputText value="#{process.host}:#{process.port}/#{process.user}" />
+                            </p:column>
+
+                            <p:column headerText="Próxima Ejecución">
+                                <div class="float:left;">
+                                    <h:outputText value="Proceso: " rendered="#{process.active}"/>
+                                    <h:outputText value="#{processBean.getNextProcessExecutionForProcess(process)}" rendered="#{process.active}">
+                                        <f:convertDateTime pattern="dd/MM/yyyy HH:mm" />
+                                    </h:outputText>
+                                </div>
+                                <div class="float:left;clear:both">
+                                    <h:outputText value="Envío Log: " rendered="#{process.automaticSendPreingreso and process.active}" style="clear:both" escape="true"/>
+                                    <h:outputText value="#{processBean.getNextLogSendExecutionForProcess(process)}" rendered="#{process.automaticSendPreingreso and process.active}">
+                                        <f:convertDateTime pattern="dd/MM/yyyy HH:mm" />
+                                    </h:outputText>
+                                </div>
+                            </p:column>
+
+                            <p:column headerText="Estado Ejec. Automática">
+                                <h:outputText value="Activo" rendered="#{process.active eq true}"/>
+                                <h:outputText value="Inactivo" rendered="#{process.active eq false}"/>
+
+                                <p:commandButton id="stop" rendered="#{process.active eq true}" action="#{processBean.stopProgrammaticExecution(process)}" update="form" icon="fa fa-stop-circle" value="Detener" styleClass="table-button" style="margin-left:10px">
+                                    <p:confirm header="Confirmación" message="¿Estás seguro que quieres detener el proceso?" icon="fa fa-exclamation-triangle red-icon" />
+                                </p:commandButton>
+                                <p:tooltip id="ttstop" for="stop" value="Detener" position="top" />
+
+                                <p:commandButton id="play" rendered="#{process.active eq false}" action="#{processBean.startProgrammaticExecution(process)}" update="form" icon="fa fa-play-circle" value="Iniciar" styleClass="table-button" style="margin-left:10px">
+                                    <p:confirm header="Confirmación" message="¿Estás seguro que quieres iniciar el proceso?" icon="fa fa-exclamation-triangle red-icon" />
+                                </p:commandButton>
+                                <p:tooltip id="ttplay" for="play" value="Detener" position="top" />
+                            </p:column>
+
+                            <p:column exportable="false" headerText="Acción">
+                                <div style="text-align: center;">
+
+                                    <p:commandButton id="run" icon="fa fa-play-circle" styleClass="table-button green-btn" action="#{processBean.start(process)}">
+                                        <p:confirm header="Confirmación" message="¿Estás seguro que quieres ejecutar el proceso?" icon="fa fa-exclamation-triangle red-icon" />
+                                    </p:commandButton>
+                                    <p:tooltip id="ttrun" for="run" value="Ejecutar ahora" position="top" />
+
+                                    <p:button id="edit" icon="fa fa-edit" styleClass="table-button" outcome="pretty:edit-process">
+                                        <f:param name="processId" value="#{process.id}" />
+                                    </p:button>
+                                    <p:tooltip id="ttedit" for="edit" value="Editar" position="top" />
+
+                                    <p:button id="logbook" icon="fa fa-list" styleClass="table-button" outcome="pretty:execution-log">
+                                        <f:param name="processId" value="#{process.id}" />
+                                    </p:button>
+                                    <p:tooltip id="toolTipVer" for="logbook" value="Ejecución del proceso" position="top" />
+
+                                    <p:commandButton id="delete" action="#{processBean.delete(process)}" update="form"  icon="fa fa-trash" styleClass="table-button red-btn">
+                                        <p:confirm header="Confirmación" message="¿Estás seguro que quieres eliminar el proceso?" icon="fa fa-exclamation-triangle red-icon" />
+                                    </p:commandButton>
+                                    <p:tooltip id="ttdelete" for="delete" value="Eliminar" position="top" />
+                                </div>
+                            </p:column>
+
+                            <f:facet name="footer">
+                                Total de resultados: #{fn:length(processBean.processList)}
+                            </f:facet>
+
+                        </p:dataTable>
+
+                    </h:form>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+
+</ui:composition>

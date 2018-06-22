@@ -1,0 +1,11 @@
+
+‡squid:S1192£"cDefine a constant instead of duplicating this literal "Hubo un error al procesar el alta " 4 times.(·Ö°Ãıÿÿÿÿ8Û¥æŠ½,
+;squid:S1643¿"Use a StringBuilder instead.(ÓœìÓ8Û¥æŠ½,
+usquid:S3776I"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(¤ó¶Üùÿÿÿÿ8Û¥æŠ½,
+Ssquid:S1172Ì"4Remove this unused method parameter "rowsProcessed".(“Û›ê8Û¥æŠ½,
+Ú%squid:RedundantThrowsDeclarationChecká" Remove the declaration of thrown exception 'cl.metlife.abm.business.managers.sftp.exception.SFTPConnectionException', as it cannot be thrown from method's body.(¼¡©Ÿ8‘¢ù£Â,
+ß%squid:RedundantThrowsDeclarationCheck¾" Remove the declaration of thrown exception 'cl.metlife.abm.business.managers.sftp.exception.SFTPConnectionException', as it cannot be thrown from method's body.( ¿úÿÿÿÿ8‘¢ù£Â,
+^squid:S1854s"@Remove this useless assignment to local variable "pipeResponse".(˜šöñ8Û¥æŠ½,
+Osquid:S1481s"1Remove this unused "pipeResponse" local variable.(˜šöñ8Û¥æŠ½,
+Nsquid:EmptyStatementUsageCheckõ"Remove this empty statement.(¤¿÷–8Û¥æŠ½,
+\squid:S00107á"<Method has 8 parameters, which is greater than 7 authorized.(¼¡©Ÿ8Û¥æŠ½,

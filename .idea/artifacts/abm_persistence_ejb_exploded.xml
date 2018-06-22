@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ejb" name="abm-persistence:ejb exploded">
+    <output-path>$PROJECT_DIR$/abm-persistence/target/abm-persistence-1.0</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="abm-persistence/ejb/EJB" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/abm-persistence/target/abm-persistence-1.0/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="abm-persistence" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,73 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $textColor;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    background-color: $bodyBgColor;
+}
+
+a {
+    text-decoration: none;
+}
+
+.layout-wrapper {
+    .layout-mask {
+        display: none;
+        @include opacity(.8);
+        background-color: $maskBgColor;
+    }
+}
+
+h2 {
+    font-family: 'Georgia';
+    font-size: 28px;
+}
+
+.ml-button-primary{
+    box-sizing: content-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 12px 14px;
+    border: 0;
+    display: inline-block;
+}
+
+.ml-button-primary:hover,
+.ml-button-primary:focus,
+.hover.ml-button-primary{
+    text-decoration: underline;
+}
+
+.ml-button-primary:focus,
+.focus.ml-button-primary{
+    outline-color: #333;
+    text-decoration: underline;
+}
+
+.focus.ml-button-primary{
+    box-shadow: 0 0 3px #333, 0 0 7px #333;
+}
+
+.ml-button-primary {
+    background-color: #007abc;
+    color: #fff;
+}
+
+.ml-button-primary:hover,
+.ml-button-primary:focus,
+.ml-button-primary.hover,
+.ml-button-primary.focus {
+    background-color: #0061a0;
+}

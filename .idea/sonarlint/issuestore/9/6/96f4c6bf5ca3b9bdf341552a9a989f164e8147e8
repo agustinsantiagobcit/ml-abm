@@ -1,0 +1,47 @@
+
+ysquid:S1192N"bDefine a constant instead of duplicating this literal "Hubo un error al conectar al SFTP" 8 times.(¹ÒÃù
+@squid:S1148 "#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+]squid:S3457I"AFormat specifiers should be used instead of string concatenation.(½ÉÍûÿÿÿÿ
+@squid:S1148È"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148”"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148ú"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Csquid:S1168¥"+Return an empty collection instead of null.(¥¹ï
+asquid:S2259t"EA "NullPointerException" could be thrown; "session" is nullable here.(‘Ù·Ïøÿÿÿÿ
+@squid:S1148¶"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+‡squid:S1192Æ"oDefine a constant instead of duplicating this literal "Hubo un error al descargar el archivo del SFTP" 6 times.(ûØÄÀ
+Fsquid:S1481ƒ")Remove this unused "jsch" local variable.(æ¤·¹ÿÿÿÿÿ
+Gsquid:S1481©"/Remove this unused "returnList" local variable.(©’£ƒ
+Fsquid:S1481«")Remove this unused "jsch" local variable.(æ¤·¹ÿÿÿÿÿ
+Tsquid:S2589Ÿ"7Remove this expression which always evaluates to "true"(îÍ›½ıÿÿÿÿ
+@squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+asquid:S2583ó"DChange this condition so that it does not always evaluate to "false"(Åôø˜ùÿÿÿÿ
+Ssquid:S2589R"7Remove this expression which always evaluates to "true"(îÍ›½ıÿÿÿÿ
+Tsquid:S2589Å"7Remove this expression which always evaluates to "true"(îÍ›½ıÿÿÿÿ
+@squid:S1148™"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Tsquid:S2589ò"7Remove this expression which always evaluates to "true"(îÍ›½ıÿÿÿÿ
+>squid:S1168×"&Return an empty array instead of null.(¥¹ï
+@squid:S1148Ã"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+?squid:S1148P"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Tsquid:S2589ï"7Remove this expression which always evaluates to "true"(îÍ›½ıÿÿÿÿ
+asquid:S2583ö"DChange this condition so that it does not always evaluate to "false"(Åôø˜ùÿÿÿÿ
+>squid:S1168Ò"&Return an empty array instead of null.(¥¹ï
+@squid:S1148Ê"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+‚squid:S1149ş"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(µÚ†‰ûÿÿÿÿ
+Tsquid:S2589®"7Remove this expression which always evaluates to "true"(îÍ›½ıÿÿÿÿ
+@squid:S1148Á"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+squid:S1149F"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(ƒª«ëûÿÿÿÿ
+@squid:S1148Ò"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Tsquid:S2589˜"7Remove this expression which always evaluates to "true"(îÍ›½ıÿÿÿÿ
+Fsquid:S14811"/Remove this unused "returnList" local variable.(©’£ƒ
+?squid:S1148o"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+asquid:S2583œ"DChange this condition so that it does not always evaluate to "false"(Åôø˜ùÿÿÿÿ
+asquid:S2583²"DChange this condition so that it does not always evaluate to "false"(Åôø˜ùÿÿÿÿ
+@squid:S1148Æ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+‚squid:S1149“"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(¹‚—úÿÿÿÿ
+@squid:S1148÷"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Tsquid:S2589Ê"7Remove this expression which always evaluates to "true"(îÍ›½ıÿÿÿÿ
+Esquid:S14813")Remove this unused "jsch" local variable.(æ¤·¹ÿÿÿÿÿ
+|squid:S4165j"eRemove this useless assignment; "session" already holds the assigned value along all execution paths.(Å¬¨Ä
+bsquid:S2259Ï"EA "NullPointerException" could be thrown; "session" is nullable here.(‘Ù·Ïøÿÿÿÿ
+bsquid:S2259 "EA "NullPointerException" could be thrown; "session" is nullable here.(‘Ù·Ïøÿÿÿÿ
+@squid:S1148Í"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

@@ -1,0 +1,104 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+                template="/WEB-INF/template.xhtml">
+
+    <ui:define name="title">Editor de configuraciones</ui:define>
+    <ui:define name="viewname">
+        <li><p:link outcome="/configuraciones">Configuraciones</p:link></li>
+    </ui:define>
+
+    <ui:define name="content">
+        <div class="ui-g">
+            <div class="ui-g-12">
+                <h1>Configuraciones del sistema</h1>
+
+                <h:form id="form" prependId="false" styleClass="ml-form">
+
+                    <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">s
+                        <p:commandButton value="No" type="button" styleClass="ui-confirmdialog-no RedButton" icon="fa fa-close White" style="float:left"/>
+                        <p:commandButton value="Si" type="button" styleClass="ui-confirmdialog-yes GreenButton" icon="fa fa-check White" style="float:right"/>
+                    </p:confirmDialog>
+
+                    <div class="card">
+                        <p:messages id="messages" showDetail="true" closable="true" />
+                        <p:dataTable extractedRows="50" paginator="true" id="configuraciones" var="config" editMode="row" editable="true"
+                                     paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown} {Exporters}"
+                                     rowsPerPageTemplate="10,20,50,100" paginatorPosition="bottom" rowsPerPageLabel="Resultador por página" reflow="true"
+                                     value="#{abmConfigBean.allConfigurations}" resizableColumns="true" rowIndexVar="rowIndexVar" emptyMessage="No existen configuraciones creadas." >
+                            <f:facet name="header">
+                                Conexiones SFTP
+                            </f:facet>
+
+                            <p:column headerText="#" sortBy="#{rowIndexVar + 1}" width="40">
+                                <p:outputLabel value="#{rowIndexVar + 1}"/>
+                            </p:column>
+
+                            <p:column headerText="Llave" sortBy="#{config.name}">
+                                <p:outputLabel value="#{config.name}"/>
+                            </p:column>
+
+                            <p:column headerText="Valor" sortBy="#{config.valor}">
+                                <p:outputLabel value="#{config.valor}"/>
+                            </p:column>
+
+                            <p:column headerText="Descripción" sortBy="#{config.descripcion}">
+                                <p:outputLabel value="#{config.descripcion}"/>
+                            </p:column>
+
+                            <p:column exportable="false" headerText="Acción">
+                                <div style="text-align: center;">
+
+                                    <p:commandButton id="edit" action="#{abmConfigBean.setEditItem(config)}" icon="fa fa-edit" update=":form:dialog" oncomplete="PF('dialogVar').show();" styleClass="table-button"/>
+                                    <p:tooltip id="ttedit" for="edit" value="Editar" position="top" />
+
+                                </div>
+                            </p:column>
+
+                            <f:facet name="footer">
+                                Total de resultados: #{fn:length(abmConfigBean.allConfigurations)}
+                            </f:facet>
+
+                        </p:dataTable>
+                    </div>
+
+                    <p:dialog
+                            id="dialog"
+                            visible="false"
+                            modal="true"
+                            widgetVar="dialogVar"
+                            showHeader="false">
+                        <h1 style="font-size: 24px;">#{abmConfigBean.editItem.id == null ? 'Nueva configuración' : 'Editar configuración'}</h1>
+
+                        <p:panelGrid columns="2" columnClasses="ui-grid-col-4,ui-grid-col-8" layout="grid" styleClass="ui-panelgrid-blank">
+                            <p:outputLabel value="Llave" style="float:left;"/>
+                            <p:inputText type="text" value="#{abmConfigBean.editItem.name}" onkeyup="this.setAttribute('value', this.value);" readonly="true"/>
+
+                            <p:outputLabel value="Valor" style="float:left"/>
+                            <p:inputText value="#{abmConfigBean.editItem.valor}"/>
+
+                            <p:outputLabel value="Descripción" style="float:left"/>
+                            <p:inputText value="#{abmConfigBean.editItem.descripcion}"/>
+
+                        </p:panelGrid>
+
+
+                        <div id="buttons" style="margin: 0 auto; margin-top:15px;clear: both;">
+                            <p:commandButton value="Cancelar" onclick="PF('dialogVar').hide();" type="button" id="cancel_button" icon="fa fa-close" styleClass="White RedButton" style="float:left" />
+                            <p:commandButton value="Guardar" action="#{abmConfigBean.save}" update=":form:configuraciones, :form:messages" oncomplete="PF('dialogVar').hide();" id="add_button" icon="fa fa-check" styleClass="White green-btn" style="float:right" />
+                        </div>
+
+                    </p:dialog>
+                </h:form>
+            </div>
+        </div>
+
+    </ui:define>
+
+
+</ui:composition>
+
+
